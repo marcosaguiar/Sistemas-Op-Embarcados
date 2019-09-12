@@ -31,16 +31,33 @@ int fseek(FILE * stream, long int offset, int whence);
 
 2. O que é a norma POSIX?
 
-POSIX (Portable Operating System Interface) é uma família de normas definidas pelo IEEE para manter compatibilidade entre sistemas operacionais (IEEE 1003). Tem como objetivo difundir uma mesma implementação para diferentes sistemas operacionais.
+POSIX (Portable Operating System Interface) é uma família de normas definidas pelo IEEE para manter compatibilidade entre sistemas operacionais (IEEE 1003). Tem como objetivo garantir a portabilidade do código-fonte de um programa a partir de um sistema operacional que atenda às normas POSIX para outro sistema POSIX, desta forma as regras atuam como um interface entre sistemas operacionais distintos, enfim, de modo coloquial "programar somente uma vez, com implementação em qualquer sistema operacional".
 
 3. Considerando a norma POSIX, responda:
 
 (a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
 
+```c
+int open(const char * path, int oflag, ...);
+int close(int fildes);
+
 (b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+
+```c
+ssize_t write(int fildes, const void *buf, size_t nbyte);
 
 (c) Quais são as funções (e seus protótipos) para ler arquivos?
 
+```c
+ssize_t read(int fildes, void *buf, size_t nbyte);
+
 (d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
 
+```c
+off_t lseek(int fd, off_t offset, int whence);
+
 (e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+
+```c
+#include <unistd.h>
+#include <fcntl.h>
