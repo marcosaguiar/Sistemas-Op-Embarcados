@@ -57,7 +57,7 @@ $ mv
 $ cat
 (n) Apresentar o tipo de um arquivo.
 $ file
-(o) Limpar a tela do terminal.$ clean
+(o) Limpar a tela do terminal.$ clear
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
 $ grep
 (q) Ordenar informações em um arquivo-texto.
@@ -67,4 +67,4 @@ $ sed
 (s) Conferir se dois arquivos são iguais.
 $ diff
 (t) Escrever algo na tela.
-$
+$echo

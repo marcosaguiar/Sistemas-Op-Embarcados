@@ -6,16 +6,16 @@ control+z
 $ cat Ola_mundo.txt
 
 2-Apresente o nome de todos os arquivos e pastas na pasta 'root'.
-$ sudo ls -a /root
+$ ls -a /
 
 3-Apresente o tipo de todos os arquivos e pastas na pasta 'root'.
-$ sudo cd /root
-$ sudo file *
+$ cd /
+$ file *
 
 
 4-Apresente somente as pastas dentro da pasta 'root'.
-$ sudo cd /root
-$ sudo file * | grep "directory"
+$ cd /
+$ file * | grep "directory"
 
 5-Descubra em que dia da semana caiu o seu aniversário nos últimos dez anos.
 
@@ -47,4 +47,3 @@ $ ls | grep “tux”
 
 12- Liste somente os arquivos que comecem com o nome 'tux'.
 $ ls | grep “^tux”
-

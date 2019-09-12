@@ -1,15 +1,15 @@
 Para todas as questões, compile-as com o gcc e execute-as via terminal.
 
 1. Crie um "Olá mundo!" em C
-```
+
 include <stdio.h>
 
 int main (){
         printf("Olá mundo!\n");
-        return 0; 
+        return 0;
 }
 
-```
+
 2. Crie um código em C que pergunta ao usuário o seu nome, e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
 ```bash
@@ -35,24 +35,24 @@ $ ./ola_usuario_1
 $ Digite o seu nome: Eu Mesmo
 
 Digite o seu nome: marcos breno
-Olá marcos 
+Olá marcos
 ```
 
 (b) Se o usuário insere mais de um nome entre aspas duplas. Por exemplo:
 ```bash
 $ ./ola_usuario_1
-$ Digite o seu nome: "Eu Mesmo"
+$ Digite o seu nome: Eu Mesmo
 
-Digite o seu nome: "marcos Breno"
-Olá "marcos 
+Digite o seu nome: marcos Breno
+Olá marcos
 ```
 
 (c) Se é usado um pipe. Por exemplo:
 ```bash
 $ echo Eu | ./ola_usuario_1
 
-echo marcos | ./02 
-Digite o seu nome: Olá marcos 
+echo marcos | ./02
+Digite o seu nome: Olá marcos
 
 ```
 
@@ -60,17 +60,17 @@ Digite o seu nome: Olá marcos
 ```bash
 $ echo Eu Mesmo | ./ola_usuario_1
 
-echo marcos breno | ./02 
-Digite o seu nome: Olá marcos 
+echo marcos breno | ./02
+Digite o seu nome: Olá marcos
 ```
 
 (e) Se é usado um pipe com mais de um nome entre aspas duplas. Por exemplo:
 ```bash
 $ echo "Eu Mesmo" | ./ola_usuario_1
 
-echo "marcos breno" | ./02 
-Digite o seu nome: Olá marcos 
-marcos@marcos:~/shell-script/lin-c$ 
+echo "marcos breno" | ./02
+Digite o seu nome: Olá marcos
+marcos@marcos:~/shell-script/lin-c$
 ```
 
 (f) Se é usado o redirecionamento de arquivo. Por exemplo:
@@ -78,9 +78,9 @@ marcos@marcos:~/shell-script/lin-c$
 $ echo Ola mundo cruel! > ola.txt
 $ ./ola_usuario_1 < ola.txt
 
-echo marcos breno > nome.txt 
-./02 < nome.txt 
-Digite o seu nome: Olá marcos 
+echo marcos breno > nome.txt
+./02 < nome.txt
+Digite o seu nome: Olá marcos
 
 ```
 
@@ -131,8 +131,8 @@ Olá marcos breno
 ```bash
 $ echo Eu | ./ola_usuario_2
 
-echo marcos | ./03 
-Olá 
+echo marcos | ./03
+Olá
 
 ```
 
@@ -140,8 +140,8 @@ Olá
 ```bash
 $ echo Eu Mesmo | ./ola_usuario_2
 
-echo marcos breno | ./03 
-Olá 
+echo marcos breno | ./03
+Olá
 
 ```
 
@@ -149,8 +149,8 @@ Olá
 ```bash
 $ echo Eu Mesmo | ./ola_usuario_2
 
-echo "marcos breno" | ./03 
-Olá 
+echo "marcos breno" | ./03
+Olá
 
 ```
 
@@ -159,8 +159,8 @@ Olá
 $ echo Ola mundo cruel! > ola.txt
 $ ./ola_usuario_2 < ola.txt
 
-./03 < nome.txt 
-Olá 
+./03 < nome.txt
+Olá
 
 ```
 
