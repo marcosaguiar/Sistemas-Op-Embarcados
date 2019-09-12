@@ -17,8 +17,8 @@ propósitos.
 ```
 3. Apresente aplicações de sistemas embarcados:
 (a) Para a indústria automotiva;
-
-```Central de multimídia veicular.
+```
+Central de multimídia veicular.
 ```
 (b) Para eletrodomésticos;
 ```
