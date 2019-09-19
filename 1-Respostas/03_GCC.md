@@ -1,17 +1,18 @@
 Para todas as questões, compile-as com o gcc e execute-as via terminal.
 
 1. Crie um "Olá mundo!" em C
-
+```c
 include <stdio.h>
 
 int main (){
         printf("Olá mundo!\n");
         return 0;
 }
-
+```
 
 2. Crie um código em C que pergunta ao usuário o seu nome, e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
+```c
 ```bash
 $ ./ola_usuario_1
 $ Digite o seu nome: Eu
@@ -30,6 +31,7 @@ int main (){
 3. Apresente os comportamentos do código anterior nos seguintes casos:
 
 (a) Se o usuário insere mais de um nome.
+
 ```bash
 $ ./ola_usuario_1
 $ Digite o seu nome: Eu Mesmo
@@ -39,6 +41,7 @@ Olá marcos
 ```
 
 (b) Se o usuário insere mais de um nome entre aspas duplas. Por exemplo:
+
 ```bash
 $ ./ola_usuario_1
 $ Digite o seu nome: Eu Mesmo
@@ -48,6 +51,7 @@ Olá marcos
 ```
 
 (c) Se é usado um pipe. Por exemplo:
+
 ```bash
 $ echo Eu | ./ola_usuario_1
 
