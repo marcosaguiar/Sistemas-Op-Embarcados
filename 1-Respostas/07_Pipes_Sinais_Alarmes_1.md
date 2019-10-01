@@ -7,6 +7,9 @@ int fd[2];
 pipe(fd);
 pid = fork();
 ```
+```
+Somente 1, por que é originado do fork().
+```
 
 (b)
 ```C
@@ -15,8 +18,19 @@ int fd[2];
 pid = fork();
 pipe(fd);
 ```
+```
+Dois, sendo um no processo filho e outro no processo pai.
+```
 
 2. Apresente mais cinco sinais importantes do ambiente Unix, além do `SIGSEGV`, `SIGUSR1`, `SIGUSR2`, `SIGALRM` e `SIGINT`. Quais são suas características e utilidades?
+
+```
+SIGQUIT (é um sinal enviado aos processos da linha de comando quando a tecla de abandono do teclado é acionada)
+SIGINT ( é um sinal emitido aos processos do terminal quando teclas de interrupção são acionadas)
+SIGTRAP ( é um sianl enviado depois de uma instrução nos casos em que gerar traces dos processos)
+SIGHUP: ( é um sinal emitido aos processo associados a uma linha de comando, quando este se desconecta)
+SIGILL: ( é um sinal emitido quando é detectada uma instrução ilegal)
+```
 
 3. Considere o código a seguir:
 
@@ -43,3 +57,9 @@ int main()
 ```
 
 Sabendo que a função `alarm()` tem como entrada a quantidade de segundos para terminar a contagem, quão precisos são os alarmes criados neste código? De onde vem a imprecisão? Este é um método confiável para desenvolver aplicações em tempo real?
+
+```
+A precisão dos alarmes criados nesse código é questionável quando se trata de sua utilização para aplicações de tempo real,
+pois dependerá da operação à ser realizada. A imprecisão deles existe devido ao sistema operacional realizar vários
+processos de forma alternada, tornando difícil determinar, exatamente, o tempo de execução dos processos.
+```
